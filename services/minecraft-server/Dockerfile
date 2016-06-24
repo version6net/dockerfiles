@@ -18,4 +18,4 @@ WORKDIR /minecraft-server
 ENV UID=1000
 ENV MOTD A Minecraft Server Powered by Docker
 ENV JVM_OPTS -Xmx1024M -Xms1024M
-ENV TYPE=VANILLA VERSION=1.8.3 LEVEL=world PVP=true
+ENV TYPE=VANILLA VERSION=1.10.2 LEVEL=world PVP=true

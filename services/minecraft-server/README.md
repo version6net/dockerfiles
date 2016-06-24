@@ -78,6 +78,12 @@ Here is one way to find the UID given a username:
 
 ## Server configuration
 
+### Server version
+
+Default server version is 1.10.2. Other versions can be used by using `VERSION` environment variable, such as
+
+	docker run -d -e VERSION=1.10.2 ...
+
 ### Op/Administrator Players
 
 To add more "op" (aka adminstrator) users to your Minecraft server, pass the Minecraft usernames separated by commas via the `OPS` environment variable, such as
