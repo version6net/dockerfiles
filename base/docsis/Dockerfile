@@ -4,5 +4,7 @@ MAINTAINER cougar@random.ee
 
 RUN yum -y install curl which libtool glib2-devel gcc flex bison net-snmp-devel make openssl-devel
 
+VOLUME [ "/usr/local/bin" ]
+
 RUN curl --location --silent https://github.com/rlaager/docsis/archive/master.tar.gz | tar xzvfp -
 RUN cd docsis-master && ./autogen.sh && make && make install
