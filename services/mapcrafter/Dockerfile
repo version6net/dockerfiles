@@ -19,6 +19,7 @@ RUN apt-get -y purge wget python imagemagick && \
 	apt-get -y clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD render.conf ./
+VOLUME ["/minecraft-server", "/www"]
 
+ADD render.conf ./
 CMD ["mapcrafter", "-c", "./render.conf", "-j", "2"]
